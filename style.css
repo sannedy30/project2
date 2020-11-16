@@ -18,10 +18,19 @@ h1 {
   
 }
 .image {
-  text-align: center;
-  border-style: solid;
+  border-style: inset;
   border-width: thin;
-  margin: 50px;;
+  margin: auto;
+
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-style: inset;
+  text-align: center;
+  font-family: Permanent Marker;
 }
 .Title {
   border-style: inset;
