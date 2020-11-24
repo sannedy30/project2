@@ -1,10 +1,40 @@
 
 
-   $(document).ready(function() {
-     console.log("ready!");
+$( document ).ready(function() {
+     console.log( "ready!" );
 
-    $('#search',.on('click', () => {
+    $('#fetch-from-api').on('click', () => {
       console.log('search was clicked');
-      $.get()
+      
+      $.get('https://api.giphy.com/v1/gifs/search?api_key=eI7GLewxQL9oxBoEuUURa8bMi1adzwgH&q=corona', function(data) {
+        console.log(data);
+      
+      
+      });
+
     })
 
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //eI7GLewxQL9oxBoEuUURa8bMi1adzwgH//
