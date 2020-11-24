@@ -27,7 +27,7 @@ $( document ).ready(function() {
         console.log('giphyData result 0 (1st result) - all images list - original image - url', giphyResponse.data[0].images.original.url);
 
         for (let image of giphyResponse.data) {
-          let imgHTML = '<img src=${image.images.original.url} />'
+          let imgHtml = '<img src=${image.images.original.url} />'
           $('#search-result').append(imgHtml);
         }
       });
