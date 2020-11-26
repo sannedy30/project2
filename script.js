@@ -17,7 +17,7 @@ $( document ).ready(function() {
 
       console.log(searchTerm);
 
-      let url = 'https://api.giphy.com/v1/gifs/search?api_key=3eG5OcLqnn9hoMlN0GSSgTw6CUwsYdre&q=limit=5' + searchTerm;
+      let url = 'https://api.giphy.com/v1/gifs/search?api_key=3eG5OcLqnn9hoMlN0GSSgTw6CUwsYdre&limit=10&q=' + searchTerm;
 
       $.get(url, function (giphyResponse) {
         console.log(giphyResponse);
@@ -32,7 +32,7 @@ $( document ).ready(function() {
 
         for (let image of giphyResponse.data) {
           console.log(image);
-          let imgHtml = '<img src=${image.images.original.url}/>'
+          let imgHtml = `<img src=${image.images.original.url}/>`
           resultsHtml = resultsHtml + imgHtml;
         }
 
