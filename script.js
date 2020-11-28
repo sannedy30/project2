@@ -32,7 +32,7 @@ $( document ).ready(function() {
 
         for (let image of giphyResponse.data) {
           console.log(image);
-          let imgHtml = `<img src=${image.images.original.url}/>`
+          let imgHtml = `<img src=${image.images.original.url} class="container"/>`
           resultsHtml = resultsHtml + imgHtml;
         }
 
